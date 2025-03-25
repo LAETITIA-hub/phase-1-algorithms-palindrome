@@ -2,9 +2,23 @@ function isPalindrome(word) {
   // Write your algorithm here
 }
 
-/* 
-  Add your pseudocode here
-*/
+  function isPalindrome(str) {
+  // Reverse the string
+  let reversedStr = str.split("").reverse().join("");
+
+  // Compare original with reversed
+  return str === reversedStr;
+}
+
+// Test cases
+console.log(isPalindrome("madam")); // true
+console.log(isPalindrome("robot")); // false
+console.log(isPalindrome("racecar")); // true
+console.log(isPalindrome("hello")); // false
+console.log(isPalindrome("a")); // true
+console.log(isPalindrome("ab")); // false
+
+
 
 /*
   Add written explanation of your solution here
